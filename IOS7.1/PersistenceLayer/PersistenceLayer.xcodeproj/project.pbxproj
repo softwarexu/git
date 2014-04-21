@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		429AD0871900AE56001C02CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 429AD0861900AE56001C02CF /* libsqlite3.dylib */; };
+		429AD0881900AE8E001C02CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 429AD0861900AE56001C02CF /* libsqlite3.dylib */; };
+		429AD08B1900AF01001C02CF /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF73C18FF749D006D30CA /* BaseDAO.m */; };
+		429AD08C1900AF01001C02CF /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF73F18FF7534006D30CA /* DBHelper.m */; };
+		429AD08D1900AF01001C02CF /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74218FF75D3006D30CA /* Events.m */; };
+		429AD08E1900AF01001C02CF /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74518FF7619006D30CA /* EventsDAO.m */; };
+		429AD08F1900AF01001C02CF /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74818FF76B4006D30CA /* Schedule.m */; };
+		429AD0901900AF01001C02CF /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74B18FF76EE006D30CA /* ScheduleDAO.m */; };
+		429AD0BF1900BD86001C02CF /* create_load.sql in Resources */ = {isa = PBXBuildFile; fileRef = 429AD0BD1900BD86001C02CF /* create_load.sql */; };
+		429AD0C01900BD86001C02CF /* DBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 429AD0BE1900BD86001C02CF /* DBConfig.plist */; };
+		42AAF70F18FF714C006D30CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AAF70E18FF714C006D30CA /* Foundation.framework */; };
+		42AAF71D18FF714C006D30CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AAF71C18FF714C006D30CA /* XCTest.framework */; };
+		42AAF71E18FF714C006D30CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AAF70E18FF714C006D30CA /* Foundation.framework */; };
+		42AAF72018FF714C006D30CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AAF71F18FF714C006D30CA /* UIKit.framework */; };
+		42AAF72318FF714C006D30CA /* libPersistenceLayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42AAF70B18FF714C006D30CA /* libPersistenceLayer.a */; };
+		42AAF72918FF714C006D30CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42AAF72718FF714C006D30CA /* InfoPlist.strings */; };
+		42AAF72B18FF714C006D30CA /* PersistenceLayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF72A18FF714C006D30CA /* PersistenceLayerTests.m */; };
+		42AAF73D18FF749D006D30CA /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF73C18FF749D006D30CA /* BaseDAO.m */; };
+		42AAF74018FF7534006D30CA /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF73F18FF7534006D30CA /* DBHelper.m */; };
+		42AAF74318FF75D3006D30CA /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74218FF75D3006D30CA /* Events.m */; };
+		42AAF74618FF7619006D30CA /* EventsDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74518FF7619006D30CA /* EventsDAO.m */; };
+		42AAF74918FF76B4006D30CA /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74818FF76B4006D30CA /* Schedule.m */; };
+		42AAF74C18FF76EE006D30CA /* ScheduleDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AAF74B18FF76EE006D30CA /* ScheduleDAO.m */; };
+		42AAF74F18FF77D6006D30CA /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAF73B18FF749D006D30CA /* BaseDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AAF75018FF77D6006D30CA /* DBHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAF73E18FF7534006D30CA /* DBHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AAF75118FF77D6006D30CA /* Events.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAF74118FF75D3006D30CA /* Events.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AAF75218FF77D6006D30CA /* EventsDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAF74418FF7619006D30CA /* EventsDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AAF75318FF77D6006D30CA /* Schedule.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAF74718FF76B4006D30CA /* Schedule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AAF75418FF77D6006D30CA /* ScheduleDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AAF74A18FF76EE006D30CA /* ScheduleDAO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42AAF72118FF714C006D30CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42AAF70318FF714C006D30CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42AAF70A18FF714C006D30CA;
+			remoteInfo = PersistenceLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42AAF70918FF714C006D30CA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		429AD0861900AE56001C02CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		429AD09B1900B2EA001C02CF /* EventsDAOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EventsDAOTests-Info.plist"; sourceTree = "<group>"; };
+		429AD09D1900B2EA001C02CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		429AD09F1900B2EA001C02CF /* EventsDAOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventsDAOTests.m; sourceTree = "<group>"; };
+		429AD0A11900B2EA001C02CF /* EventsDAOTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventsDAOTests-Prefix.pch"; sourceTree = "<group>"; };
+		429AD0BD1900BD86001C02CF /* create_load.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = create_load.sql; path = ../DBFile/create_load.sql; sourceTree = "<group>"; };
+		429AD0BE1900BD86001C02CF /* DBConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DBConfig.plist; path = ../DBFile/DBConfig.plist; sourceTree = "<group>"; };
+		42AAF70B18FF714C006D30CA /* libPersistenceLayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPersistenceLayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AAF70E18FF714C006D30CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42AAF71218FF714C006D30CA /* PersistenceLayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersistenceLayer-Prefix.pch"; sourceTree = "<group>"; };
+		42AAF71B18FF714C006D30CA /* PersistenceLayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AAF71C18FF714C006D30CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		42AAF71F18FF714C006D30CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		42AAF72618FF714C006D30CA /* PersistenceLayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PersistenceLayerTests-Info.plist"; sourceTree = "<group>"; };
+		42AAF72818FF714C006D30CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42AAF72A18FF714C006D30CA /* PersistenceLayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistenceLayerTests.m; sourceTree = "<group>"; };
+		42AAF73B18FF749D006D30CA /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		42AAF73C18FF749D006D30CA /* BaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
+		42AAF73E18FF7534006D30CA /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		42AAF73F18FF7534006D30CA /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		42AAF74118FF75D3006D30CA /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		42AAF74218FF75D3006D30CA /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		42AAF74418FF7619006D30CA /* EventsDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsDAO.h; sourceTree = "<group>"; };
+		42AAF74518FF7619006D30CA /* EventsDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsDAO.m; sourceTree = "<group>"; };
+		42AAF74718FF76B4006D30CA /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		42AAF74818FF76B4006D30CA /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		42AAF74A18FF76EE006D30CA /* ScheduleDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDAO.h; sourceTree = "<group>"; };
+		42AAF74B18FF76EE006D30CA /* ScheduleDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDAO.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42AAF70818FF714C006D30CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429AD0871900AE56001C02CF /* libsqlite3.dylib in Frameworks */,
+				42AAF70F18FF714C006D30CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AAF71818FF714C006D30CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429AD0881900AE8E001C02CF /* libsqlite3.dylib in Frameworks */,
+				42AAF71D18FF714C006D30CA /* XCTest.framework in Frameworks */,
+				42AAF72318FF714C006D30CA /* libPersistenceLayer.a in Frameworks */,
+				42AAF72018FF714C006D30CA /* UIKit.framework in Frameworks */,
+				42AAF71E18FF714C006D30CA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		429AD0991900B2EA001C02CF /* EventsDAOTests */ = {
+			isa = PBXGroup;
+			children = (
+				429AD09F1900B2EA001C02CF /* EventsDAOTests.m */,
+				429AD09A1900B2EA001C02CF /* Supporting Files */,
+			);
+			path = EventsDAOTests;
+			sourceTree = "<group>";
+		};
+		429AD09A1900B2EA001C02CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				429AD09B1900B2EA001C02CF /* EventsDAOTests-Info.plist */,
+				429AD09C1900B2EA001C02CF /* InfoPlist.strings */,
+				429AD0A11900B2EA001C02CF /* EventsDAOTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		429AD0B41900BCBC001C02CF /* DBFile */ = {
+			isa = PBXGroup;
+			children = (
+				429AD0BD1900BD86001C02CF /* create_load.sql */,
+				429AD0BE1900BD86001C02CF /* DBConfig.plist */,
+			);
+			name = DBFile;
+			sourceTree = "<group>";
+		};
+		42AAF70218FF714C006D30CA = {
+			isa = PBXGroup;
+			children = (
+				429AD0B41900BCBC001C02CF /* DBFile */,
+				42AAF71018FF714C006D30CA /* PersistenceLayer */,
+				42AAF72418FF714C006D30CA /* PersistenceLayerTests */,
+				429AD0991900B2EA001C02CF /* EventsDAOTests */,
+				42AAF70D18FF714C006D30CA /* Frameworks */,
+				42AAF70C18FF714C006D30CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42AAF70C18FF714C006D30CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42AAF70B18FF714C006D30CA /* libPersistenceLayer.a */,
+				42AAF71B18FF714C006D30CA /* PersistenceLayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42AAF70D18FF714C006D30CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				429AD0861900AE56001C02CF /* libsqlite3.dylib */,
+				42AAF70E18FF714C006D30CA /* Foundation.framework */,
+				42AAF71C18FF714C006D30CA /* XCTest.framework */,
+				42AAF71F18FF714C006D30CA /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42AAF71018FF714C006D30CA /* PersistenceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				42AAF73B18FF749D006D30CA /* BaseDAO.h */,
+				42AAF73C18FF749D006D30CA /* BaseDAO.m */,
+				42AAF73E18FF7534006D30CA /* DBHelper.h */,
+				42AAF73F18FF7534006D30CA /* DBHelper.m */,
+				42AAF74118FF75D3006D30CA /* Events.h */,
+				42AAF74218FF75D3006D30CA /* Events.m */,
+				42AAF74418FF7619006D30CA /* EventsDAO.h */,
+				42AAF74518FF7619006D30CA /* EventsDAO.m */,
+				42AAF74718FF76B4006D30CA /* Schedule.h */,
+				42AAF74818FF76B4006D30CA /* Schedule.m */,
+				42AAF74A18FF76EE006D30CA /* ScheduleDAO.h */,
+				42AAF74B18FF76EE006D30CA /* ScheduleDAO.m */,
+				42AAF71118FF714C006D30CA /* Supporting Files */,
+			);
+			path = PersistenceLayer;
+			sourceTree = "<group>";
+		};
+		42AAF71118FF714C006D30CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42AAF71218FF714C006D30CA /* PersistenceLayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42AAF72418FF714C006D30CA /* PersistenceLayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				42AAF72A18FF714C006D30CA /* PersistenceLayerTests.m */,
+				42AAF72518FF714C006D30CA /* Supporting Files */,
+			);
+			path = PersistenceLayerTests;
+			sourceTree = "<group>";
+		};
+		42AAF72518FF714C006D30CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42AAF72618FF714C006D30CA /* PersistenceLayerTests-Info.plist */,
+				42AAF72718FF714C006D30CA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		42AAF74D18FF77AA006D30CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AAF74F18FF77D6006D30CA /* BaseDAO.h in Headers */,
+				42AAF75018FF77D6006D30CA /* DBHelper.h in Headers */,
+				42AAF75118FF77D6006D30CA /* Events.h in Headers */,
+				42AAF75218FF77D6006D30CA /* EventsDAO.h in Headers */,
+				42AAF75318FF77D6006D30CA /* Schedule.h in Headers */,
+				42AAF75418FF77D6006D30CA /* ScheduleDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		42AAF70A18FF714C006D30CA /* PersistenceLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AAF72E18FF714C006D30CA /* Build configuration list for PBXNativeTarget "PersistenceLayer" */;
+			buildPhases = (
+				42AAF70718FF714C006D30CA /* Sources */,
+				42AAF70818FF714C006D30CA /* Frameworks */,
+				42AAF70918FF714C006D30CA /* CopyFiles */,
+				42AAF74D18FF77AA006D30CA /* Headers */,
+				429AD0A71900B97E001C02CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PersistenceLayer;
+			productName = PersistenceLayer;
+			productReference = 42AAF70B18FF714C006D30CA /* libPersistenceLayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		42AAF71A18FF714C006D30CA /* PersistenceLayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AAF73118FF714C006D30CA /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */;
+			buildPhases = (
+				42AAF71718FF714C006D30CA /* Sources */,
+				42AAF71818FF714C006D30CA /* Frameworks */,
+				42AAF71918FF714C006D30CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42AAF72218FF714C006D30CA /* PBXTargetDependency */,
+			);
+			name = PersistenceLayerTests;
+			productName = PersistenceLayerTests;
+			productReference = 42AAF71B18FF714C006D30CA /* PersistenceLayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42AAF70318FF714C006D30CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = 42AAF70618FF714C006D30CA /* Build configuration list for PBXProject "PersistenceLayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42AAF70218FF714C006D30CA;
+			productRefGroup = 42AAF70C18FF714C006D30CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AAF70A18FF714C006D30CA /* PersistenceLayer */,
+				42AAF71A18FF714C006D30CA /* PersistenceLayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		429AD0A71900B97E001C02CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429AD0C01900BD86001C02CF /* DBConfig.plist in Resources */,
+				429AD0BF1900BD86001C02CF /* create_load.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AAF71918FF714C006D30CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AAF72918FF714C006D30CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42AAF70718FF714C006D30CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AAF74918FF76B4006D30CA /* Schedule.m in Sources */,
+				42AAF74318FF75D3006D30CA /* Events.m in Sources */,
+				42AAF73D18FF749D006D30CA /* BaseDAO.m in Sources */,
+				42AAF74618FF7619006D30CA /* EventsDAO.m in Sources */,
+				42AAF74C18FF76EE006D30CA /* ScheduleDAO.m in Sources */,
+				42AAF74018FF7534006D30CA /* DBHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AAF71718FF714C006D30CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429AD08B1900AF01001C02CF /* BaseDAO.m in Sources */,
+				429AD08C1900AF01001C02CF /* DBHelper.m in Sources */,
+				429AD08D1900AF01001C02CF /* Events.m in Sources */,
+				429AD08E1900AF01001C02CF /* EventsDAO.m in Sources */,
+				429AD08F1900AF01001C02CF /* Schedule.m in Sources */,
+				429AD0901900AF01001C02CF /* ScheduleDAO.m in Sources */,
+				42AAF72B18FF714C006D30CA /* PersistenceLayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42AAF72218FF714C006D30CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42AAF70A18FF714C006D30CA /* PersistenceLayer */;
+			targetProxy = 42AAF72118FF714C006D30CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		429AD09C1900B2EA001C02CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				429AD09D1900B2EA001C02CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42AAF72718FF714C006D30CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42AAF72818FF714C006D30CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42AAF72C18FF714C006D30CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42AAF72D18FF714C006D30CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42AAF72F18FF714C006D30CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PersistenceLayer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersistenceLayer/PersistenceLayer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		42AAF73018FF714C006D30CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/PersistenceLayer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersistenceLayer/PersistenceLayer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		42AAF73218FF714C006D30CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersistenceLayer/PersistenceLayer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PersistenceLayerTests/PersistenceLayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		42AAF73318FF714C006D30CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PersistenceLayer/PersistenceLayer-Prefix.pch";
+				INFOPLIST_FILE = "PersistenceLayerTests/PersistenceLayerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42AAF70618FF714C006D30CA /* Build configuration list for PBXProject "PersistenceLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AAF72C18FF714C006D30CA /* Debug */,
+				42AAF72D18FF714C006D30CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AAF72E18FF714C006D30CA /* Build configuration list for PBXNativeTarget "PersistenceLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AAF72F18FF714C006D30CA /* Debug */,
+				42AAF73018FF714C006D30CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AAF73118FF714C006D30CA /* Build configuration list for PBXNativeTarget "PersistenceLayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AAF73218FF714C006D30CA /* Debug */,
+				42AAF73318FF714C006D30CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42AAF70318FF714C006D30CA /* Project object */;
+}
